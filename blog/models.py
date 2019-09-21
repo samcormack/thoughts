@@ -10,6 +10,9 @@ from wagtail.search import index
 class BlogIndexPage(Page):
     content_panels = Page.content_panels
 
+    parent_page_types = ['home.HomePage']
+    subpage_types = ['blog.BlogPage']
+
 
 class BlogPage(Page):
     date = models.DateField("Post date")
@@ -29,3 +32,6 @@ class BlogPage(Page):
         FieldPanel('intro'),
         StreamFieldPanel('body'),
     ]
+
+    parent_page_types = ['blog.BlogIndexPage']
+    subpage_types = []
