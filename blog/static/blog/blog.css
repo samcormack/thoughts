@@ -8,10 +8,11 @@
   margin-bottom: 2em;
 }
 .template-blogindexpage h2 {
-  color: #9e4ab5;
+  color: #cf77e7;
 }
 .template-blogindexpage h2 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=blog.css.map */
