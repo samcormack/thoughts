@@ -2,16 +2,20 @@
 {% load wagtailcore_tags %}
 {% load static %}
 
+{% block extra_css %}<link href="{% static 'blog/blog.css' %}" rel="stylesheet" type="text/css">{% endblock %}
+
 {% block body_class %}template-blogindexpage{% endblock %}
 
 {% block content %}
-    <h1>{{ page.title }}</h1>
+    <div class="container">
+        <h1>{{ page.title }}</h1>
 
 
-    {% for post in page.get_children %}
-        <h2><a href="{% pageurl post %}">{{ post.title }}</a></h2>
-        {{ post.specific.intro }}
-        {% include_block post.specific.body %}
-    {% endfor %}
+        {% for post in page.get_children %}
+            <h2><a href="{% pageurl post %}">{{ post.title }}</a></h2>
+            {{ post.specific.intro }}
+            {% include_block post.specific.body %}
+        {% endfor %}
+    </div>
 
 {% endblock %}

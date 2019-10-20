@@ -1,0 +1,20 @@
+$accent-colour: #9e4ab5;
+
+.container {
+    max-width: 60em;
+    margin: auto;
+}
+
+.template-blogindexpage {
+    h1 {
+        font-size: 4em;
+        margin-bottom: 2em;
+    }
+
+    h2 {
+        a {
+            text-decoration: none;
+        }
+        color: $accent-colour;
+    }
+}

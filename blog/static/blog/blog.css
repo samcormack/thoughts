@@ -1,0 +1,17 @@
+.container {
+  max-width: 60em;
+  margin: auto;
+}
+
+.template-blogindexpage h1 {
+  font-size: 4em;
+  margin-bottom: 2em;
+}
+.template-blogindexpage h2 {
+  color: #9e4ab5;
+}
+.template-blogindexpage h2 a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=blog.css.map */
