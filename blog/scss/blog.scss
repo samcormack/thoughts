@@ -1,4 +1,4 @@
-$accent-colour: #cf77e7;
+$accent-colour: #871fb8;
 
 .container {
     max-width: 60em;
@@ -8,7 +8,16 @@ $accent-colour: #cf77e7;
 .template-blogindexpage {
     h1 {
         font-size: 4em;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
+        // border-bottom: 2px solid $accent-colour;
+        &::after {
+            width: 90%;
+            height: 2px;
+            margin-left: -10%;
+            background-color: $accent-colour;
+            display: block;
+            content: "";
+        }
     }
 
     h2 {

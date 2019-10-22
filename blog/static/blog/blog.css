@@ -5,10 +5,18 @@
 
 .template-blogindexpage h1 {
   font-size: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+.template-blogindexpage h1::after {
+  width: 90%;
+  height: 2px;
+  margin-left: -10%;
+  background-color: #871fb8;
+  display: block;
+  content: "";
 }
 .template-blogindexpage h2 {
-  color: #cf77e7;
+  color: #871fb8;
 }
 .template-blogindexpage h2 a {
   text-decoration: none;
